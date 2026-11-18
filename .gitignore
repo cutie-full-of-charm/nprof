@@ -1,0 +1,9 @@
+*.egg-info
+.venv
+build
+out
+__pycache__
+*.csv
+*.json
+*.html
+*.txt
