@@ -1,5 +1,6 @@
 # nprof -- naive profiler
 Latest release: 0.6.1  
+[ru README](README.ru.md)
 
 `nprof` is a statistical Python profiler that tracks resource usage by a process and its child processes: CPU, RAM, and GPU.  
 `nprof` is not a function-level profiler: it measures resource consumption over time rather than Python function calls or individual lines of code.  
