@@ -1,0 +1,1627 @@
+{
+  "schema_version": 3,
+  "version": "0.6.0",
+  "description_md": "## Тяжелый профайл\n\n        первая фаза должна сильно нагрузить CPU,\n        вторая должна вызвать скачок потребления RAM,\n        третья это просто sleep(),\n        четвертая грузит GC и создает много аллокаций,\n        пятая нагружает cpu через криптографию",
+  "platform": "Linux-6.18.55-1-MANJARO-x86_64-with-glibc2.44",
+  "python": "3.10.20",
+  "pid": 783181,
+  "gpu": null,
+  "gpu_error": null,
+  "sampler": "process",
+  "duration_s": 13.967884836,
+  "interval_s": 0.005,
+  "memory_interval_s": 0.05,
+  "gpu_interval_s": 0.1,
+  "selection": {
+    "start_s": 0.000556948,
+    "end_s": 13.931842093,
+    "duration_s": 13.931285145,
+    "has_start_marker": true,
+    "has_stop_marker": true
+  },
+  "sampling": {
+    "samples": 864,
+    "target_interval_s": 0.005,
+    "mean_interval_s": 0.016116864915411356,
+    "max_interval_s": 0.02370532,
+    "p95_interval_s": 0.0206803871,
+    "mean_sample_duration_ms": 13.732423828703704,
+    "max_sample_duration_ms": 20.117552,
+    "gaps_over_2x_target": 863
+  },
+  "memory_sampling": {
+    "samples": 233,
+    "target_interval_s": 0.05,
+    "mean_interval_s": 0.05976554665086207,
+    "max_interval_s": 0.073073687,
+    "p95_interval_s": 0.06616320765,
+    "mean_sample_duration_ms": 1.926892905579399,
+    "max_sample_duration_ms": 5.03311,
+    "gaps_over_2x_target": 0
+  },
+  "gpu_sampling": {
+    "samples": 0,
+    "target_interval_s": 0.1,
+    "mean_interval_s": null,
+    "max_interval_s": null,
+    "p95_interval_s": null,
+    "mean_sample_duration_ms": null,
+    "max_sample_duration_ms": null,
+    "gaps_over_2x_target": 0
+  },
+  "events": [
+    {
+      "event": "window_start",
+      "name": null,
+      "time_s": 0.000556948,
+      "pid": 783181
+    },
+    {
+      "event": "mark",
+      "name": "p1",
+      "time_s": 0.000566175,
+      "pid": 783181
+    },
+    {
+      "event": "mark",
+      "name": "p2",
+      "time_s": 3.001139186,
+      "pid": 783181
+    },
+    {
+      "event": "mark",
+      "name": "p3",
+      "time_s": 5.927739431,
+      "pid": 783181
+    },
+    {
+      "event": "mark",
+      "name": "p4",
+      "time_s": 7.929209097,
+      "pid": 783181
+    },
+    {
+      "event": "mark",
+      "name": "p5",
+      "time_s": 10.931825946,
+      "pid": 783181
+    },
+    {
+      "event": "window_stop",
+      "name": null,
+      "time_s": 13.931842093,
+      "pid": 783181
+    }
+  ],
+  "phases": [
+    {
+      "id": "m1",
+      "name": "p1",
+      "kind": "mark",
+      "parent_id": null,
+      "depth": 0,
+      "start_s": 0.000566175,
+      "end_s": 3.001139186,
+      "duration_s": 3.000573011,
+      "exclusive_duration_s": 3.000573011,
+      "samples": 198,
+      "metrics": {
+        "process_count": {
+          "start": 1,
+          "min": 1,
+          "avg": 1,
+          "max": 1,
+          "p95": 1.0,
+          "samples": 198
+        },
+        "cpu_pct": {
+          "start": 72.52058641886673,
+          "min": 52.60262258791336,
+          "avg": 98.86720973176051,
+          "max": 169.20131648776322,
+          "p95": 140.92519661189894,
+          "samples": 198
+        },
+        "cpu_time_s": {
+          "start": 0.010000000000000002,
+          "min": 0.010000000000000002,
+          "avg": 1.4875757575757576,
+          "max": 2.96,
+          "p95": 2.8129999999999993,
+          "samples": 198
+        },
+        "rss_mib": {
+          "start": 21.72265625,
+          "min": 21.72265625,
+          "avg": 21.72265625,
+          "max": 21.72265625,
+          "p95": 21.72265625,
+          "samples": 198
+        },
+        "uss_mib": {
+          "start": 10.28515625,
+          "min": 10.28515625,
+          "avg": 10.28515625,
+          "max": 10.28515625,
+          "p95": 10.28515625,
+          "samples": 49
+        },
+        "pss_mib": {
+          "start": 13.587890625,
+          "min": 13.587890625,
+          "avg": 13.587890625,
+          "max": 13.587890625,
+          "p95": 13.587890625,
+          "samples": 49
+        },
+        "gpu_device_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_mem_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_enc_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_dec_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_power_w": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_process_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_render_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_compute_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_video_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        }
+      },
+      "aggregation": "inclusive"
+    },
+    {
+      "id": "m2",
+      "name": "p2",
+      "kind": "mark",
+      "parent_id": null,
+      "depth": 0,
+      "start_s": 3.001139186,
+      "end_s": 5.927739431,
+      "duration_s": 2.926600245,
+      "exclusive_duration_s": 2.926600245,
+      "samples": 178,
+      "metrics": {
+        "process_count": {
+          "start": 1,
+          "min": 1,
+          "avg": 1,
+          "max": 1,
+          "p95": 1.0,
+          "samples": 178
+        },
+        "cpu_pct": {
+          "start": 129.32309318595054,
+          "min": 0.0,
+          "avg": 14.511311254616263,
+          "max": 141.35124724806803,
+          "p95": 119.68533701520887,
+          "samples": 178
+        },
+        "cpu_time_s": {
+          "start": 2.9799999999999995,
+          "min": 2.9799999999999995,
+          "avg": 3.3159550561797753,
+          "max": 3.38,
+          "p95": 3.34,
+          "samples": 178
+        },
+        "rss_mib": {
+          "start": 25.1796875,
+          "min": 25.1796875,
+          "avg": 379.6224762991573,
+          "max": 409.67578125,
+          "p95": 409.67578125,
+          "samples": 178
+        },
+        "uss_mib": {
+          "start": 14.14453125,
+          "min": 14.14453125,
+          "avg": 367.82342155612247,
+          "max": 398.23828125,
+          "p95": 398.23828125,
+          "samples": 49
+        },
+        "pss_mib": {
+          "start": 17.447265625,
+          "min": 17.447265625,
+          "avg": 371.1255779655612,
+          "max": 401.541015625,
+          "p95": 401.541015625,
+          "samples": 49
+        },
+        "gpu_device_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_mem_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_enc_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_dec_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_power_w": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_process_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_render_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_compute_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_video_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        }
+      },
+      "aggregation": "inclusive"
+    },
+    {
+      "id": "m3",
+      "name": "p3",
+      "kind": "mark",
+      "parent_id": null,
+      "depth": 0,
+      "start_s": 5.927739431,
+      "end_s": 7.929209097,
+      "duration_s": 2.001469666,
+      "exclusive_duration_s": 2.001469666,
+      "samples": 131,
+      "metrics": {
+        "process_count": {
+          "start": 1,
+          "min": 1,
+          "avg": 1,
+          "max": 1,
+          "p95": 1.0,
+          "samples": 131
+        },
+        "cpu_pct": {
+          "start": 0.0,
+          "min": 0.0,
+          "avg": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "samples": 131
+        },
+        "cpu_time_s": {
+          "start": 3.38,
+          "min": 3.38,
+          "avg": 3.38,
+          "max": 3.38,
+          "p95": 3.38,
+          "samples": 131
+        },
+        "rss_mib": {
+          "start": 22.95703125,
+          "min": 22.95703125,
+          "avg": 22.95703125,
+          "max": 22.95703125,
+          "p95": 22.95703125,
+          "samples": 131
+        },
+        "uss_mib": {
+          "start": 11.51953125,
+          "min": 11.51953125,
+          "avg": 11.51953125,
+          "max": 11.51953125,
+          "p95": 11.51953125,
+          "samples": 34
+        },
+        "pss_mib": {
+          "start": 14.8212890625,
+          "min": 14.8212890625,
+          "avg": 14.822150735294118,
+          "max": 14.822265625,
+          "p95": 14.822265625,
+          "samples": 34
+        },
+        "gpu_device_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_mem_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_enc_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_dec_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_power_w": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_process_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_render_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_compute_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_video_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        }
+      },
+      "aggregation": "inclusive"
+    },
+    {
+      "id": "m4",
+      "name": "p4",
+      "kind": "mark",
+      "parent_id": null,
+      "depth": 0,
+      "start_s": 7.929209097,
+      "end_s": 10.931825946,
+      "duration_s": 3.002616849,
+      "exclusive_duration_s": 3.002616849,
+      "samples": 163,
+      "metrics": {
+        "process_count": {
+          "start": 1,
+          "min": 1,
+          "avg": 1,
+          "max": 1,
+          "p95": 1.0,
+          "samples": 163
+        },
+        "cpu_pct": {
+          "start": 0.0,
+          "min": 0.0,
+          "avg": 98.60121096549713,
+          "max": 148.5445677523917,
+          "p95": 135.3267354372717,
+          "samples": 163
+        },
+        "cpu_time_s": {
+          "start": 3.38,
+          "min": 3.38,
+          "avg": 4.836319018404907,
+          "max": 6.33,
+          "p95": 6.178999999999999,
+          "samples": 163
+        },
+        "rss_mib": {
+          "start": 30.546875,
+          "min": 30.546875,
+          "avg": 127.24094133435582,
+          "max": 128.73828125,
+          "p95": 128.73828125,
+          "samples": 163
+        },
+        "uss_mib": {
+          "start": 98.796875,
+          "min": 98.796875,
+          "avg": 116.8859375,
+          "max": 117.30078125,
+          "p95": 117.30078125,
+          "samples": 50
+        },
+        "pss_mib": {
+          "start": 102.099609375,
+          "min": 102.099609375,
+          "avg": 120.188671875,
+          "max": 120.603515625,
+          "p95": 120.603515625,
+          "samples": 50
+        },
+        "gpu_device_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_mem_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_enc_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_dec_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_power_w": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_process_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_render_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_compute_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_video_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        }
+      },
+      "aggregation": "inclusive"
+    },
+    {
+      "id": "m5",
+      "name": "p5",
+      "kind": "mark",
+      "parent_id": null,
+      "depth": 0,
+      "start_s": 10.931825946,
+      "end_s": 13.931842093,
+      "duration_s": 3.000016147,
+      "exclusive_duration_s": 3.000016147,
+      "samples": 194,
+      "metrics": {
+        "process_count": {
+          "start": 1,
+          "min": 1,
+          "avg": 1,
+          "max": 1,
+          "p95": 1.0,
+          "samples": 194
+        },
+        "cpu_pct": {
+          "start": 103.8710992896545,
+          "min": 56.39544985719706,
+          "avg": 99.46171448188244,
+          "max": 154.83130973973593,
+          "p95": 143.61636432641973,
+          "samples": 194
+        },
+        "cpu_time_s": {
+          "start": 6.35,
+          "min": 6.35,
+          "avg": 7.830721649484536,
+          "max": 9.32,
+          "p95": 9.167,
+          "samples": 194
+        },
+        "rss_mib": {
+          "start": 123.81640625,
+          "min": 123.81640625,
+          "avg": 123.81640625,
+          "max": 123.81640625,
+          "p95": 123.81640625,
+          "samples": 194
+        },
+        "uss_mib": {
+          "start": 112.37890625,
+          "min": 112.37890625,
+          "avg": 112.37890625,
+          "max": 112.37890625,
+          "p95": 112.37890625,
+          "samples": 51
+        },
+        "pss_mib": {
+          "start": 115.681640625,
+          "min": 115.681640625,
+          "avg": 115.681640625,
+          "max": 115.681640625,
+          "p95": 115.681640625,
+          "samples": 51
+        },
+        "gpu_device_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_mem_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_enc_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_dec_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_power_w": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_process_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_render_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_compute_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_video_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        }
+      },
+      "aggregation": "inclusive"
+    }
+  ],
+  "phase_summaries": {
+    "p1": {
+      "duration_s": 3.000573011,
+      "samples": 198,
+      "metrics": {
+        "process_count": {
+          "start": 1,
+          "min": 1,
+          "avg": 1,
+          "max": 1,
+          "p95": 1.0,
+          "samples": 198
+        },
+        "cpu_pct": {
+          "start": 72.52058641886673,
+          "min": 52.60262258791336,
+          "avg": 98.86720973176051,
+          "max": 169.20131648776322,
+          "p95": 140.92519661189894,
+          "samples": 198
+        },
+        "cpu_time_s": {
+          "start": 0.010000000000000002,
+          "min": 0.010000000000000002,
+          "avg": 1.4875757575757576,
+          "max": 2.96,
+          "p95": 2.8129999999999993,
+          "samples": 198
+        },
+        "rss_mib": {
+          "start": 21.72265625,
+          "min": 21.72265625,
+          "avg": 21.72265625,
+          "max": 21.72265625,
+          "p95": 21.72265625,
+          "samples": 198
+        },
+        "uss_mib": {
+          "start": 10.28515625,
+          "min": 10.28515625,
+          "avg": 10.28515625,
+          "max": 10.28515625,
+          "p95": 10.28515625,
+          "samples": 49
+        },
+        "pss_mib": {
+          "start": 13.587890625,
+          "min": 13.587890625,
+          "avg": 13.587890625,
+          "max": 13.587890625,
+          "p95": 13.587890625,
+          "samples": 49
+        },
+        "gpu_device_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_mem_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_enc_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_dec_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_power_w": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_process_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_render_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_compute_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_video_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        }
+      },
+      "aggregation": "inclusive"
+    },
+    "p2": {
+      "duration_s": 2.926600245,
+      "samples": 178,
+      "metrics": {
+        "process_count": {
+          "start": 1,
+          "min": 1,
+          "avg": 1,
+          "max": 1,
+          "p95": 1.0,
+          "samples": 178
+        },
+        "cpu_pct": {
+          "start": 129.32309318595054,
+          "min": 0.0,
+          "avg": 14.511311254616263,
+          "max": 141.35124724806803,
+          "p95": 119.68533701520887,
+          "samples": 178
+        },
+        "cpu_time_s": {
+          "start": 2.9799999999999995,
+          "min": 2.9799999999999995,
+          "avg": 3.3159550561797753,
+          "max": 3.38,
+          "p95": 3.34,
+          "samples": 178
+        },
+        "rss_mib": {
+          "start": 25.1796875,
+          "min": 25.1796875,
+          "avg": 379.6224762991573,
+          "max": 409.67578125,
+          "p95": 409.67578125,
+          "samples": 178
+        },
+        "uss_mib": {
+          "start": 14.14453125,
+          "min": 14.14453125,
+          "avg": 367.82342155612247,
+          "max": 398.23828125,
+          "p95": 398.23828125,
+          "samples": 49
+        },
+        "pss_mib": {
+          "start": 17.447265625,
+          "min": 17.447265625,
+          "avg": 371.1255779655612,
+          "max": 401.541015625,
+          "p95": 401.541015625,
+          "samples": 49
+        },
+        "gpu_device_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_mem_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_enc_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_dec_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_power_w": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_process_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_render_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_compute_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_video_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        }
+      },
+      "aggregation": "inclusive"
+    },
+    "p3": {
+      "duration_s": 2.001469666,
+      "samples": 131,
+      "metrics": {
+        "process_count": {
+          "start": 1,
+          "min": 1,
+          "avg": 1,
+          "max": 1,
+          "p95": 1.0,
+          "samples": 131
+        },
+        "cpu_pct": {
+          "start": 0.0,
+          "min": 0.0,
+          "avg": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "samples": 131
+        },
+        "cpu_time_s": {
+          "start": 3.38,
+          "min": 3.38,
+          "avg": 3.38,
+          "max": 3.38,
+          "p95": 3.38,
+          "samples": 131
+        },
+        "rss_mib": {
+          "start": 22.95703125,
+          "min": 22.95703125,
+          "avg": 22.95703125,
+          "max": 22.95703125,
+          "p95": 22.95703125,
+          "samples": 131
+        },
+        "uss_mib": {
+          "start": 11.51953125,
+          "min": 11.51953125,
+          "avg": 11.51953125,
+          "max": 11.51953125,
+          "p95": 11.51953125,
+          "samples": 34
+        },
+        "pss_mib": {
+          "start": 14.8212890625,
+          "min": 14.8212890625,
+          "avg": 14.822150735294118,
+          "max": 14.822265625,
+          "p95": 14.822265625,
+          "samples": 34
+        },
+        "gpu_device_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_mem_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_enc_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_dec_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_power_w": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_process_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_render_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_compute_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_video_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        }
+      },
+      "aggregation": "inclusive"
+    },
+    "p4": {
+      "duration_s": 3.002616849,
+      "samples": 163,
+      "metrics": {
+        "process_count": {
+          "start": 1,
+          "min": 1,
+          "avg": 1,
+          "max": 1,
+          "p95": 1.0,
+          "samples": 163
+        },
+        "cpu_pct": {
+          "start": 0.0,
+          "min": 0.0,
+          "avg": 98.60121096549713,
+          "max": 148.5445677523917,
+          "p95": 135.3267354372717,
+          "samples": 163
+        },
+        "cpu_time_s": {
+          "start": 3.38,
+          "min": 3.38,
+          "avg": 4.836319018404907,
+          "max": 6.33,
+          "p95": 6.178999999999999,
+          "samples": 163
+        },
+        "rss_mib": {
+          "start": 30.546875,
+          "min": 30.546875,
+          "avg": 127.24094133435582,
+          "max": 128.73828125,
+          "p95": 128.73828125,
+          "samples": 163
+        },
+        "uss_mib": {
+          "start": 98.796875,
+          "min": 98.796875,
+          "avg": 116.8859375,
+          "max": 117.30078125,
+          "p95": 117.30078125,
+          "samples": 50
+        },
+        "pss_mib": {
+          "start": 102.099609375,
+          "min": 102.099609375,
+          "avg": 120.188671875,
+          "max": 120.603515625,
+          "p95": 120.603515625,
+          "samples": 50
+        },
+        "gpu_device_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_mem_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_enc_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_dec_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_power_w": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_process_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_render_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_compute_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_video_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        }
+      },
+      "aggregation": "inclusive"
+    },
+    "p5": {
+      "duration_s": 3.000016147,
+      "samples": 194,
+      "metrics": {
+        "process_count": {
+          "start": 1,
+          "min": 1,
+          "avg": 1,
+          "max": 1,
+          "p95": 1.0,
+          "samples": 194
+        },
+        "cpu_pct": {
+          "start": 103.8710992896545,
+          "min": 56.39544985719706,
+          "avg": 99.46171448188244,
+          "max": 154.83130973973593,
+          "p95": 143.61636432641973,
+          "samples": 194
+        },
+        "cpu_time_s": {
+          "start": 6.35,
+          "min": 6.35,
+          "avg": 7.830721649484536,
+          "max": 9.32,
+          "p95": 9.167,
+          "samples": 194
+        },
+        "rss_mib": {
+          "start": 123.81640625,
+          "min": 123.81640625,
+          "avg": 123.81640625,
+          "max": 123.81640625,
+          "p95": 123.81640625,
+          "samples": 194
+        },
+        "uss_mib": {
+          "start": 112.37890625,
+          "min": 112.37890625,
+          "avg": 112.37890625,
+          "max": 112.37890625,
+          "p95": 112.37890625,
+          "samples": 51
+        },
+        "pss_mib": {
+          "start": 115.681640625,
+          "min": 115.681640625,
+          "avg": 115.681640625,
+          "max": 115.681640625,
+          "p95": 115.681640625,
+          "samples": 51
+        },
+        "gpu_device_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_mem_util_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_enc_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_dec_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_device_power_w": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_process_vram_mib": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_render_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_compute_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        },
+        "gpu_intel_video_pct": {
+          "start": null,
+          "min": null,
+          "avg": null,
+          "max": null,
+          "p95": null,
+          "samples": 0
+        }
+      },
+      "aggregation": "inclusive"
+    }
+  },
+  "metrics": {
+    "process_count": {
+      "start": 1,
+      "min": 1,
+      "avg": 1,
+      "max": 1,
+      "p95": 1.0,
+      "samples": 864
+    },
+    "cpu_pct": {
+      "start": 72.52058641886673,
+      "min": 0.0,
+      "avg": 66.5813552396661,
+      "max": 169.20131648776322,
+      "p95": 137.32551825551374,
+      "samples": 864
+    },
+    "cpu_time_s": {
+      "start": 0.010000000000000002,
+      "min": 0.010000000000000002,
+      "avg": 4.207222222222222,
+      "max": 9.32,
+      "p95": 8.6485,
+      "samples": 864
+    },
+    "rss_mib": {
+      "start": 21.72265625,
+      "min": 21.72265625,
+      "avg": 138.47443757233796,
+      "max": 409.67578125,
+      "p95": 409.67578125,
+      "samples": 864
+    },
+    "uss_mib": {
+      "start": 10.28515625,
+      "min": 10.28515625,
+      "avg": 130.87813505901286,
+      "max": 398.23828125,
+      "p95": 398.23828125,
+      "samples": 233
+    },
+    "pss_mib": {
+      "start": 13.587890625,
+      "min": 13.587890625,
+      "avg": 134.18073112258583,
+      "max": 401.541015625,
+      "p95": 401.541015625,
+      "samples": 233
+    },
+    "gpu_device_util_pct": {
+      "start": null,
+      "min": null,
+      "avg": null,
+      "max": null,
+      "p95": null,
+      "samples": 0
+    },
+    "gpu_device_mem_util_pct": {
+      "start": null,
+      "min": null,
+      "avg": null,
+      "max": null,
+      "p95": null,
+      "samples": 0
+    },
+    "gpu_device_enc_pct": {
+      "start": null,
+      "min": null,
+      "avg": null,
+      "max": null,
+      "p95": null,
+      "samples": 0
+    },
+    "gpu_device_dec_pct": {
+      "start": null,
+      "min": null,
+      "avg": null,
+      "max": null,
+      "p95": null,
+      "samples": 0
+    },
+    "gpu_device_vram_mib": {
+      "start": null,
+      "min": null,
+      "avg": null,
+      "max": null,
+      "p95": null,
+      "samples": 0
+    },
+    "gpu_device_power_w": {
+      "start": null,
+      "min": null,
+      "avg": null,
+      "max": null,
+      "p95": null,
+      "samples": 0
+    },
+    "gpu_process_vram_mib": {
+      "start": null,
+      "min": null,
+      "avg": null,
+      "max": null,
+      "p95": null,
+      "samples": 0
+    },
+    "gpu_intel_render_pct": {
+      "start": null,
+      "min": null,
+      "avg": null,
+      "max": null,
+      "p95": null,
+      "samples": 0
+    },
+    "gpu_intel_compute_pct": {
+      "start": null,
+      "min": null,
+      "avg": null,
+      "max": null,
+      "p95": null,
+      "samples": 0
+    },
+    "gpu_intel_video_pct": {
+      "start": null,
+      "min": null,
+      "avg": null,
+      "max": null,
+      "p95": null,
+      "samples": 0
+    }
+  },
+  "metric_semantics": {
+    "cpu_pct": "100% equals one logical CPU",
+    "cpu_time_s": "cumulative tracked CPU seconds since selection baseline; children retained after exit",
+    "phase_metrics": "inclusive (nested phases included)",
+    "slow_metrics": "USS/PSS and GPU are null between their independently timed observations; no forward-fill",
+    "metric_timestamps": "elapsed_s for CPU/RSS, memory_elapsed_s for USS/PSS, gpu_elapsed_s for GPU"
+  }
+}

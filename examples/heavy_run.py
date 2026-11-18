@@ -48,12 +48,14 @@ if __name__ == "__main__":
         include_children=True,
         sampler="process",      # также поддерживается thread, но настоятельно рекомендуется именно process
         html=True,              # на выходе получим .html
-        description="""## Тяжелый профайл,
+        json=True,
+        md=True,
+        description="""## Тяжелый профайл\n
         первая фаза должна сильно нагрузить CPU,
         вторая должна вызвать скачок потребления RAM,
         третья это просто sleep(),
         четвертая грузит GC и создает много аллокаций,
-        пятая нагружает cpu через криптографию""", # подобное форматирование сломано, рассчитывайте на то, что это будет одна строка
+        пятая нагружает cpu через криптографию""", # подобное форматирование сломано, работает только первый перенос строки
     )
 
     print("heavy run started (it'll take ~13 sec.)")
@@ -63,19 +65,25 @@ if __name__ == "__main__":
     print("run: phase 1...")
     mark("p1") # Здесь используются mark вместо phase, это может удобнее, но mark не поддерживает вложенность
     phase_1_cpu_math_heavy(3.0)
+
     print("run: phase 2...")
     mark("p2")
     phase_2_memory_allocation_spike()
+
     print("run: phase 3...")
     mark("p3")
     phase_3_idle_pause(2.0)
+
     print("run: phase 4...")
     mark("p4")
     phase_4_memory_churn(3.0)
+
     print("run: phase 5...")
     mark("p5")
     phase_5_cpu_hashing(3.0)
+
     stop()
+
     total_time = round(time.time() - start_total, 2)
     print(f"Execution time={total_time}s")
     summary = profiling_stop()

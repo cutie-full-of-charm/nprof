@@ -4,7 +4,7 @@
 `nprof` -- это статистический python-профайлер ресурсов процесса и его дочерних процессов: CPU, RAM, GPU  
 `nprof` не является function-level профайлером: он измеряет потребление ресурсов по времени, а не вызовы и строки Python-кода  
 
-На выходе получаются сырые .csv, .json, или форматированные .txt, .md, .html
+На выходе получаются сырые .csv, .json, или форматированные .txt, .md, [.html](#Примеры)
 
 ## Установка
 
@@ -62,8 +62,8 @@ finally:
 print(report["selection"]["duration_s"])
 print(report["phase_summaries"]["pipeline"]["metrics"]["rss_mib"]["max"])
 ```
-В результате будут созданы файлы quickstart.csv, .txt,.html  
-Файл .html полностью автономный и включает в себя удобные для восприятия графики, можно смотреть графики каждой фазы профиля отдельно
+В результате будут созданы файлы quickstart.csv, .txt, [.html](#Примеры)  
+Файл .html полностью автономный и включает в себя удобные для восприятия графики, можно смотреть графики каждой фазы профиля отдельно. 
 
 ### API
 
@@ -115,9 +115,17 @@ uv run nprof view results.csv  # создаст .html отчет из .csv ис�
 uv run nprof view results.csv --open # также сразу откроет этот отчет в браузере по умолчанию
 uv run nprof view results.csv --html # тоже создаст .html отчет из .csv исходника
 uv run nprof view results.csv --no-html --md # создаст .md
-uv run nprof view results.csv --html --md --json results.json # создаст .html и .md из .json исходника
 ```
 
-## Примеры .html отчета
+### Примеры
+[.txt](docs/preview/heavy.txt), [.csv](docs/preview/heavy.csv), [.md](docs/preview/heavy.md), [.json](docs/preview/heavy.json), [.html](docs/preview/heavy.html)
 
-Здесь должна быть пара картинок
+#### Превью файлов html, получающихся из примеров /examples/
+
+![preview_1](docs/preview/flat.png)
+![preview_2](docs/preview/nested.png)
+
+
+# License
+
+Note that code is licensed under MPL 2.0
