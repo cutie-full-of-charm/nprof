@@ -12,6 +12,8 @@ It produces raw `.csv` and `.json` files, or formatted `.txt`, `.md`, and [.html
 Python 3.9+:
 
 ```bash
+# You can get it via PyPi
+uv add nprof
 # Download the .whl file from Releases
 uv add ./nprof-0.3.0-py3-none-any.whl
 # List GPUs available for profiling. Windows supports NVIDIA only;

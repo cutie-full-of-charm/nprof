@@ -11,6 +11,8 @@
 Python 3.9+:
 
 ```bash
+# Вы можете получить его из PyPi
+uv add nprof
 # .whl можно взять из releases
 uv add ./nprof-0.3.0-py3-none-any.whl
 # выведет доступные для профилирования GPU, win поддерживает только nvidia,
