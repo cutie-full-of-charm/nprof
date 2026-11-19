@@ -30,7 +30,7 @@ from pathlib import Path
 
 import psutil
 
-__version__ = "0.6.0"
+__version__ = "0.6.1"
 __all__ = [
     "list_gpus",
     "mark",
