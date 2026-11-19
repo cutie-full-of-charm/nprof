@@ -15,17 +15,6 @@ dependencies = [
     "nvidia-ml-py",
 ]
 
-[project.scripts]
-nprof = "nprof:main"
-
-[project.urls]
-Homepage = "https://github.com/cutie-full-of-charm/nprof"
-Repository = "https://github.com/cutie-full-of-charm/nprof"
-Issues = "https://github.com/cutie-full-of-charm/nprof/issues"
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
 keywords = [
     "profiling",
     "profiler",
@@ -53,3 +42,14 @@ classifiers = [
     "Topic :: System :: Benchmark",
     "Topic :: Software Development :: Testing",
 ]
+
+[project.scripts]
+nprof = "nprof:main"
+
+[project.urls]
+Homepage = "https://github.com/cutie-full-of-charm/nprof"
+Repository = "https://github.com/cutie-full-of-charm/nprof"
+Issues = "https://github.com/cutie-full-of-charm/nprof/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
